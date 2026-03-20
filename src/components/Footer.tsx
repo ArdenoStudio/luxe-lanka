@@ -1,3 +1,4 @@
+import ArdenoProductionCredit from './ArdenoProductionCredit';
 
 export function Footer() {
   return (
@@ -54,7 +55,7 @@ export function Footer() {
           </div>
 
           {/* Bottom bar */}
-          <div className="pt-8 border-t border-sand/8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="pt-8 border-t border-sand/8 flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
             <p className="font-sans text-[10px] uppercase tracking-[0.22em] text-sand/25">
               &copy; {new Date().getFullYear()} Luxe Lanka. All Rights Reserved.
             </p>
@@ -64,6 +65,8 @@ export function Footer() {
             </div>
           </div>
         </div>
+
+        <ArdenoProductionCredit />
       </div>
     </footer>
   );

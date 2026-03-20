@@ -1,12 +1,13 @@
 import React from 'react';
 import { Instagram, Facebook, MapPin } from 'lucide-react';
+import ArdenoProductionCredit from './ArdenoProductionCredit';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-black pt-20 pb-10 border-t border-white/5 -mt-[1px] relative z-10">
       <div className="container mx-auto px-6">
+        {/* ... (existing content) */}
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
-
           <div className="md:w-1/3">
             <div className="mb-6">
               <span className="font-serif text-3xl text-brand-cream">Luxe</span>
@@ -45,16 +46,20 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/5 pt-8 pb-28 md:pb-0 flex flex-col md:flex-row justify-between items-center text-xs font-sans text-brand-silver/30">
+        <div className="border-t border-white/5 pt-8 pb-28 md:pb-0 flex flex-col md:flex-row justify-between items-center text-xs font-sans text-brand-silver/30 mb-8">
           <p>&copy; {new Date().getFullYear()} Luxe Lanka. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-brand-gold">Privacy</a>
             <a href="#" className="hover:text-brand-gold">Terms</a>
           </div>
         </div>
+
+        <ArdenoProductionCredit color="#c4a97d" />
       </div>
     </footer>
   );
 };
+
+export default Footer;
 
 export default Footer;

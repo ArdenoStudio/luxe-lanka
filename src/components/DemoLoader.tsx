@@ -351,7 +351,7 @@ export default function DemoLoader({ onComplete }: DemoLoaderProps) {
                     <div style={{ position: "absolute", inset: 0, pointerEvents: "none", backgroundImage: GRAIN_URL, opacity: 0.06, mixBlendMode: "overlay" }} />
                     <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center,transparent 40%,rgba(0,0,0,.7) 100%)", pointerEvents: "none" }} />
                     <canvas ref={canvasRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none" }} />
-                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 22, position: "relative", zIndex: 2 }}>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 18, position: "relative", zIndex: 2, transform: "translateY(-4vh)" }}>
                         <div style={{ opacity: 0, animation: "logoReveal 1.1s cubic-bezier(.22,1,.36,1) .2s forwards" }}>
                             <svg viewBox="120 130 1200 810" style={{ width: 300, height: "auto", filter: "drop-shadow(0 0 16px rgba(214,193,146,.2))", transform: "translateX(14px)" }}>
                                 <g transform="translate(166,488)" style={{ opacity: 0, animation: "fillFade 1.4s ease 0.3s forwards" }}>
