@@ -353,7 +353,7 @@ export default function DemoLoader({ onComplete }: DemoLoaderProps) {
                     <canvas ref={canvasRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none" }} />
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 22, position: "relative", zIndex: 2 }}>
                         <div style={{ opacity: 0, animation: "logoReveal 1.1s cubic-bezier(.22,1,.36,1) .2s forwards" }}>
-                            <svg viewBox="120 130 1200 810" style={{ width: 300, height: "auto", filter: "drop-shadow(0 0 16px rgba(214,193,146,.2))" }}>
+                            <svg viewBox="120 130 1200 810" style={{ width: 300, height: "auto", filter: "drop-shadow(0 0 16px rgba(214,193,146,.2))", transform: "translateX(30px)" }}>
                                 <g transform="translate(166,488)" style={{ opacity: 0, animation: "fillFade 1.4s ease 0.3s forwards" }}>
                                     <path d={L_CALLI_PATH} transform="translate(0.606923,354.301732)" fill="url(#lg2)" filter="url(#logoGlow2)" />
                                 </g>
