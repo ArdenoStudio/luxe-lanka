@@ -30,7 +30,7 @@ const ArdenoProductionCredit: React.FC<{ color?: string }> = ({ color = "#c4a97d
       <div className="w-full flex flex-col items-center justify-center py-12 bg-transparent pointer-events-auto">
         <div 
           className="flex flex-col items-center gap-4 group cursor-pointer" 
-          onClick={() => window.open('https://ardenostudio.com', '_blank')}
+          onClick={() => window.open('https://ardeno-studio-website.vercel.app', '_blank')}
         >
           <span className="text-[10px] uppercase tracking-[0.3em] text-white/20 group-hover:text-white/40 transition-colors duration-500 font-sans">
             An Ardeno Production

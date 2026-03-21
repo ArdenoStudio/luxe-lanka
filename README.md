@@ -1,20 +1,7 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Luxe Lanka | Defining Digital Luxury for Beauty
 
-# Run and deploy your AI Studio app
+For Luxe Lanka, we focused on creating an indulgent digital experience for the most discerning hair and beauty clientele. This project is our exploration of "silky" transitions and a quiet, premium design language.
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/ca36dc57-384a-466b-9381-309e066c4509
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 💎 The Concept
+- **Space to Breathe:** We used minimalist, high-white-space layouts to allow our service imagery to speak for itself.
+- **Refinement in Action:** We wanted the booking system and service showcase to feel as bespoke as the treatments themselves.

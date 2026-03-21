@@ -1,4 +1,7 @@
 {
   "framework": "vite",
-  "name": "ardeno-luxe-lanka"
+  "name": "ardeno-luxe-lanka",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }

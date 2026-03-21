@@ -62,7 +62,7 @@ const ArdenoProductionCredit: React.FC<{ color?: string }> = ({ color = "#c4a97d
       `}</style>
       <div 
         className="flex flex-col items-center gap-4 group cursor-pointer" 
-        onClick={() => window.open('https://ardenostudio.com', '_blank')}
+        onClick={() => window.open('https://ardeno-studio-website.vercel.app', '_blank')}
       >
         <div className="relative">
           <div className="absolute inset-0 blur-3xl bg-white/5 group-hover:bg-white/10 transition-all duration-1000 rounded-full scale-150" />
