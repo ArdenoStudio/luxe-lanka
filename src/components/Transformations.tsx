@@ -5,8 +5,8 @@ const transformations = [
   {
     label: 'Bespoke Balayage',
     stylist: 'Julian — Master Colorist',
-    before: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=2070&auto=format&fit=crop',
-    after:  'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=2070&auto=format&fit=crop',
+    before: '/balayage-before.png',
+    after:  '/balayage-after.png',
   },
   {
     label: 'Signature Blowout',
@@ -30,12 +30,23 @@ function Slider({ t }: { t: typeof transformations[0] }) {
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-[4/5] overflow-hidden rounded-2xl select-none cursor-col-resize"
-      onMouseDown={() => { dragging.current = true; }}
-      onMouseMove={(e) => dragging.current && move(e.clientX)}
-      onMouseUp={() => { dragging.current = false; }}
-      onMouseLeave={() => { dragging.current = false; }}
-      onTouchMove={(e) => move(e.touches[0].clientX)}
+      className="relative w-full aspect-[4/5] overflow-hidden rounded-2xl select-none cursor-col-resize touch-none"
+      onPointerDown={(e) => {
+        dragging.current = true;
+        e.currentTarget.setPointerCapture(e.pointerId);
+        move(e.clientX);
+      }}
+      onPointerMove={(e) => {
+        if (dragging.current) move(e.clientX);
+      }}
+      onPointerUp={(e) => {
+        dragging.current = false;
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      }}
+      onPointerCancel={(e) => {
+        dragging.current = false;
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      }}
     >
       {/* After (base layer) */}
       <img src={t.after} alt="After" className="absolute inset-0 w-full h-full object-cover" referrerPolicy="no-referrer" />
